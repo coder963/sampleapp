@@ -1,0 +1,38 @@
+{
+  "name": "sampleapp",
+  "version": "0.0.1",
+  "description": "SampleApp",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "macOS",
+    "win32"
+  ],
+  "author": "Raj Keshwani",
+  "license": "",
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "electron-builder": "^20.40.2"
+  },
+  "build": {
+    "appId": "sampleapp",
+    "protocols": {
+      "name": "sampleapp",
+      "schemes": [
+        "sampleapp"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.Reference"
+    },
+    "win": {
+      "icon": "icon.png"
+    }
+  }
+}
